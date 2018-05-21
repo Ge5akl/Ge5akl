@@ -1,0 +1,82 @@
+@import "style.css";
+#grid {
+	min-width:320px;
+	max-width: 4000px;
+	margin:0 auto 1px;
+	min-height: 100vh;
+	display: grid;
+
+	grid-template:100px auto auto 400px 50px / 1fr;
+ 	grid-template-areas:"header header header"
+					   "left-sidebar left-sidebar left-sidebar"  
+						  "right-sidebar right-sidebar right-sidebar"
+						 "main main main"
+                       "footer footer footer";          
+}
+
+.mimg {
+    grid-column: col 5 / span 5;
+	grid-row: row 6;
+}
+.headinfo {
+    grid-column: col 1 / span 3;
+	grid-row: row 6;
+}
+ .right-sidebar{
+    display: grid;
+    grid-template-columns: repeat(6, [col] 170px);
+    grid-template-rows: repeat(6,[row] 120px);
+    padding: 40px;
+ }
+ .texthead {
+     padding: 20px;
+ }
+ .left-sidebar {
+     background-image: url(images/backgroundotr.jpg)
+ }
+ .text-n {
+    grid-column: col 1 / span 3;
+	grid-row: row 6;
+ }
+ .hg, .hg2 {
+    grid-column: col 3 / span 3;
+    grid-row: row 1;
+    font-size: 35px;
+ }
+ .text-n {
+    grid-column: col 1 / span 6;
+	grid-row: row 2;
+ }
+ .image-am {
+    grid-column: col 1 / span 2;
+    grid-row: row 3;
+    margin: 20px;
+    padding: 50px;
+ }
+ .text-b {
+    grid-column: col 4 / span 3;
+    grid-row: row 4;
+ }
+ main {
+    display: grid;
+    grid-template-columns: repeat(12, [col] 170px);
+    grid-template-rows: repeat(5,[row] 120px);
+    padding: 40px;
+    color: aliceblue;
+    grid-column-gap: 15px;
+ }
+ .maincontent {
+    grid-column: col 1 / span 4;
+    grid-row: row 1;
+    color: black;
+ }
+ .hg2 {
+    grid-column: col 3 / span 3;
+    grid-row: row 1;
+    font-size: 35px;
+ }
+ .image-am2 {
+    grid-column: col 5 / span 2;
+    grid-row: row 1;
+
+ }

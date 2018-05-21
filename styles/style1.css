@@ -1,0 +1,88 @@
+@import "style.css";
+.mimg {
+    grid-column: col 5 / span 5;
+	grid-row: row 6;
+}
+.headinfo {
+    grid-column: col 1 / span 3;
+	grid-row: row 6;
+}
+ .right-sidebar{
+    display: grid;
+    grid-template-columns: repeat(6, [col] 170px);
+    grid-template-rows: repeat(2,[row] 120px);
+    padding: 40px;
+ }
+ .texthead {
+     padding: 20px;
+ }
+ .left-sidebar, main {
+     background-image: url(images/ff.jpg)
+ }
+ .text-n {
+    grid-column: col 1 / span 3;
+	grid-row: row 6;
+ }
+ .hg, .hg2 {
+    grid-column: col 3 / span 3;
+    grid-row: row 1;
+    font-size: 35px;
+ }
+ .text-n {
+    grid-column: col 1 / span 6;
+	grid-row: row 2;
+ }
+ .image-am {
+    grid-column: col 1 / span 2;
+    grid-row: row 3;
+    margin: 20px;
+ }
+ .text-b {
+    grid-column: col 4 / span 3;
+    grid-row: row 3;
+ }
+ main {
+    display: grid;
+    grid-template-columns: repeat(12, [col] 170px);
+    grid-template-rows: repeat(5,[row] 120px);
+    padding: 40px;
+    color: aliceblue;
+    grid-column-gap: 15px;
+ }
+ .maincontent {
+    grid-column: col 3 / span 3;
+    grid-row: row 2;
+ }
+ .hg2 {
+    grid-column: col 3 / span 3;
+    grid-row: row 1;
+    font-size: 35px;
+ }
+ .gramota1, .gramota2, .gramota3, .gramota4, .gramota5 {
+    height: 200%;
+    width:100%;
+    
+}
+ .gramota1 {
+    grid-column: col 2 / span 1;
+    grid-row: row 2;
+ }
+  .gramota2 {
+    grid-column: col 2 / span 1;
+    grid-row: row 4;
+  
+ }
+ .gramota3 {
+    grid-column: col 3 / span 1;
+    grid-row: row 4;
+ }
+ .gramota4 {
+    grid-column: col 4 / span 1;
+    grid-row: row 4;
+ }
+ .gramota5 {
+    grid-column: col 5 / span 1;
+    grid-row: row 4;
+ }
+
+                 

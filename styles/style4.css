@@ -1,0 +1,66 @@
+@import "style.css";
+
+
+#grid {
+	min-width:320px;
+	max-width: 4000px;
+	margin:0 auto 1px;
+	min-height: 100vh;
+	display: grid;
+
+	grid-template:100px auto auto 50px / 1fr;
+ 	grid-template-areas:"header header header"
+					   "left-sidebar left-sidebar left-sidebar"  
+						  "right-sidebar right-sidebar right-sidebar"
+                       "footer footer footer";          
+}
+
+.mimg {
+    grid-column: col 5 / span 5;
+	grid-row: row 6;
+}
+.headinfo {
+    grid-column: col 1 / span 3;
+	grid-row: row 6;
+}
+ .right-sidebar{
+    display: grid;
+    grid-template-columns: repeat(6, [col] 170px);
+    grid-template-rows: repeat(6,[row] 120px);
+    padding: 40px;
+ }
+ .texthead {
+     padding: 20px;
+ }
+ .left-sidebar {
+     background-image: url(images/ff.jpg)
+ }
+ 
+ .hg {
+    grid-column: col 3 / span 3;
+    grid-row: row 1;
+    font-size: 35px;
+ }
+ .news-block {
+    grid-column: col 1 / span 8;
+    grid-row: row 2;
+    background-color: rgba(16, 141, 243, 0.521) ;
+    padding: 20px;
+ }
+ .comment-block {
+ grid-column: col 1 / span 8;
+ grid-row: row 3;
+ background-color: rgba(80, 182, 255, 0.993) ;
+ padding: 20px;
+}
+.comment {
+    grid-column: col 6 / span 9;
+    grid-row: row 4;
+    padding: 20px;
+}
+.otv {
+    grid-column: col 1 / span 2;
+    grid-row: row 4;
+    padding: 20px;
+}
+ 

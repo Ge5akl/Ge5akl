@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+}   
+body { 
+    display: grid;
+    grid-template-areas: 
+      "header header header"
+      "article ads ads"
+      "miner miner miner"
+      "about about2 about2"
+      "footer footer footer";
+    grid-template-columns: 3fr 30% 10%;
+    height: 90vh;
+    margin: 0px;
+}
+
+ 
+  header, footer, article, nav, div, main, ads, miner, about, about2 {
+    padding: 1em;
+    }
+  #pageHeader {
+    grid-area: header; 
+    }
+  #pageFooter {
+    grid-area: footer;
+    }
+  #mainArticle { 
+    grid-area: article;      
+    }
+  #mainNav { 
+    grid-area: nav; 
+    }
+  #siteAds { 
+    grid-area: ads; 
+    } 
+  #siteMine {
+    grid-area: miner; 
+  }
+    li {
+        display: inline-block; /* Строчно-блочные элементы */
+        background: blue; /* Цвет фона */
+        margin-right: 3px; /* Расстояние между пунктами меню */
+        -webkit-transform: skewX(-30deg); /* Для Safari и Chrome */
+        -moz-transform: skewX(-30deg); /* Для Firefox */
+        -o-transform: skewX(-30deg); /* Для Opera */
+        -ms-transform: skewX(-30deg); /* Для IE */
+        transform: skewX(-30deg); /* CSS3 */
+       }
+       a {
+        color: #fff; /* Цвет ссылок */
+        display: block; /* Блочный элемент */
+        padding: 15px ; /* Поля вокруг текста */
+        text-decoration: none; /* Убираем подчёркивание */
+        -webkit-transform: skewX(30deg); /* Для Safari и Chrome */
+        -moz-transform: skewX(30deg); /* Для Firefox */
+        -o-transform: skewX(30deg); /* Для Opera */
+        -ms-transform: skewX(30deg); /* Для IE */
+        transform: skewX(30deg); /* CSS3 */
+       }
+       li:hover {
+        background: white;
+        }
+
+        .hq{
+            position: relative;
+            left: 4%;
+            height: 0px;
+            font-size: 40px;
+        }
+        .mine {
+                grid-column-start: 1;
+                grid-column-end: 4;
+        }
+     
+    
+    @media all and (max-width: 780px) {
+        body { 
+          grid-template-areas: 
+            "header"
+            "article"
+            "ads"
+            "ads"
+            "miner"
+            "footer";
+          grid-template-columns: 50fr;
+          height: 70vh;
+       }
+    }
+    html, body {
+        font-family: verdana, arial, sans-serif;
+    }
+
+    body {
+        color: #fff;
+    }
+   #logo {
+       padding: 0px;
+      margin: -3px;
+   }
+   miner {
+       height: 25vh;
+       color: black;
+   }
+   footer {
+       background-color: blue;
+   }
+   article{
+    height: 70vh;
+   }
+   about, about2 {
+       color: black;
+   }
+
+
+
+  
+
+   
+
+   
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
